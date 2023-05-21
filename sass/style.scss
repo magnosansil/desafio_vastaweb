@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+@import "./header.scss";
+@import "./about.scss";
+@import "./portfolio.scss";
+@import "./depositions.scss";
+@import "./contact.scss";
+@import "./footer.scss";
+@import "./media_queries.scss";

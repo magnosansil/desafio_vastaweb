@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Vasta Web</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Formulação dos elementos de navegação, banner e títulos iniciais -->
+    <header>
+        <nav>
+            <a href="/"><img src="./images/vasta_dark.png" alt="logo" title="Página Inicial"></a>
+            <div>
+                <a><img src="./images/search_icon.png" alt="pesquisar" class="search"></a>
+                <div class="burger-menu">
+                    <img id="burger" src="./images/menu.png" onclick="clickMenu()"></img>
+                    <ul id="menu">
+                        <li><a class="list" href="#about">Sobre</a></li>
+                        <li><a class="list" href="#portfolio">Portfólio</a></li>
+                        <li><a class="list" href="#depositions">Depoimentos</a></li>
+                        <li><a class="list" href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="links">
+                <li><a class="list" href="#about">Sobre</a></li>
+                <li><a class="list" href="#portfolio">Portfólio</a></li>
+                <li><a class="list" href="#depositions">Depoimentos</a></li>
+                <li><a class="list" href="#contact">Contato</a></li>
+                <li><a><img src="./images/search_icon.png" alt="pesquisar"></a></li>
+            </ul>
+        </nav>
+
+        <section class="banner">
+            <h1>TÍTULO BANNER</h1>
+            <h2>SUBTÍTULO BANNER</h2>
+            <button>
+                BOTÃO DE CLICK
+            </button>
+        </section>
+    </header>
+    <!-- 1ª Seção: Sobre -->
+    <section id="about">
+        <h2 class="section-title">SOBRE</h2>
+        <article class="first-about">
+            <figure>
+                <img src="./images/imagem_1.jpg" alt="cybercafe" title="Cyber Café" class="about-img">
+            </figure>
+            <div class="description">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae quisquam distinctio temporibus magni
+                    minima aliquam eum quam velit labore cupiditate excepturi unde sequi vitae impedit provident
+                    blanditiis itaque voluptas odit quibusdam, repellat perferendis placeat odio. Illo illum dignissimos
+                    tenetur maiores quas dolor id perspiciatis distinctio. Dolores assumenda necessitatibus totam, est
+                    nobis dolorem quisquam beatae. Rerum eum cum dolor id vel ipsa delectus odio nihil neque maxime eos
+                    necessitatibus architecto vitae quaerat nam quidem velit dolorum, quis minus consequatur. Explicabo
+                    doloribus voluptas cupiditate veritatis, illo dolor aspernatur voluptatem hic perspiciatis
+                    consequatur ducimus, magni laborum atque asperiores corporis sint molestiae quas quod!</p>
+                <button>
+                    SAIBA MAIS
+                </button>
+            </div>
+        </article>
+
+        <p class="read-more" id="toggle-content">Leia Mais <span>&#8744</span></p>
+        <article class="second-about" id="hidden-content">
+            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In vel libero, doloribus
+                harum quasi aliquid fugiat. Quos, maiores non. Maxime, illo totam reiciendis velit incidunt sit
+                provident animi aut sequi autem vitae optio quia dolorum quod nemo voluptatum rerum nihil enim
+                voluptates a sint maiores! Dolorum quaerat voluptatibus hic, dolor unde officia veniam neque accusamus
+                commodi adipisci cupiditate iusto, molestiae nobis odio harum explicabo accusantium necessitatibus amet
+                magni laboriosam. Amet ab non, eum accusamus aliquam porro molestiae assumenda perferendis dicta aliquid
+                unde odio hic, autem at! Laudantium quo atque exercitationem sunt consequatur nihil excepturi modi
+                obcaecati facere itaque. Voluptate laudantium, laboriosam ullam nemo quod consequatur libero adipisci
+                corrupti necessitatibus consequuntur!</p>
+            <figure>
+                <img src="./images/imagem_2.jpg" alt="aula" title="Aula" class="about-img">
+            </figure>
+        </article>
+    </section>
+    <!-- 2ª Seção: Portfólio -->
+    <section id="portfolio">
+        <h2 class="section-title">PORTFÓLIO</h2>
+        <div class="portfolio-images">
+            <figure>
+                <img src="./images/portfolio_imagem_1.jpg" alt="predios">
+            </figure>
+            <figure>
+                <img src="./images/portfolio_imagem_2.jpg" alt="predios">
+            </figure>
+            <figure>
+                <img src="./images/portfolio_imagem_3.jpg" alt="predios">
+            </figure>
+            <figure>
+                <img src="./images/portfolio_imagem_4.jpg" alt="predios">
+            </figure>
+            <figure class="hidden">
+                <img src="./images/portfolio_imagem_5.jpg" alt="predios">
+            </figure>
+            <figure class="hidden">
+                <img src="./images/portfolio_imagem_6.jpg" alt="predios">
+            </figure>
+        </div>
+        <button id="toggle-button" disabled>
+            CARREGAR MAIS PROJETOS
+        </button>
+    </section>
+    <!-- 3ª Seção: Depoimentos -->
+    <section id="depositions">
+        <h2 class="section-title">DEPOIMENTOS</h2>
+        <div class="depositions-group">
+            <a class="arrow"><img class="left-arrow" src="./images/arrow.png" alt=""></a>
+            <div class="comment active">
+                <figure>
+                    <img src="./images/imagem_depoimento.png" alt="">
+                </figure>
+                <div class="comment-description">
+                    <h6>Lorem, ipsum dolor.</h6>
+                    <p><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur nam provident
+                            explicabo ab delectus quisquam laudantium libero architecto iure repellat?</small></p>
+                </div>
+            </div>
+            <div class="comment">
+                <figure>
+                    <img src="./images/imagem_depoimento.png" alt="">
+                </figure>
+                <div class="comment-description">
+                    <h6>Lorem, ipsum dolor.</h6>
+                    <p><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur nam provident
+                            explicabo ab delectus quisquam laudantium libero architecto iure repellat?</small></p>
+                </div>
+            </div>
+            <div class="comment">
+                <figure>
+                    <img src="./images/imagem_depoimento.png" alt="">
+                </figure>
+                <div class="comment-description">
+                    <h6>Lorem, ipsum dolor.</h6>
+                    <p><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur nam provident
+                            explicabo ab delectus quisquam laudantium libero architecto iure repellat?</small></p>
+                </div>
+            </div>
+            <a class="arrow"><img src="./images/arrow.png" alt=""></a>
+        </div>
+    </section>
+    <!-- 4ª Seção: Contatos -->
+    <section id="contact">
+        <h2 class="section-title">CONTATO</h2>
+        <form action="">
+            <input type="text" placeholder="Nome" class="input-name">
+            <input type="text" placeholder="Sobrenome" class="input-surname">
+            <input type="email" placeholder="Email" class="input-email">
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensagem"
+                class="input-text"></textarea>
+            <input type="tel" placeholder="Telefone" class="input-phone">
+            <p class="message-security"><small>Todos os dados são guardados de forma segura, saiba mais
+                    <a>aqui</a></small></p>
+            <input type="submit" value="ENVIAR" class="input-send">
+        </form>
+    </section>
+    <!-- Formulação de elementos do rodapé -->
+    <footer>
+        <div class="footer-left">
+            <figure class="vasta-logo1">
+                <img src="./images/footer_logo_360x.png" alt="logo">
+            </figure>
+            <div class="subscription">
+                <h3>SE INSCREVE PARA RECEBER NOSSO NEWSLETTER</h3>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="submit" value="INSCREVER-SE">
+                </div>
+            </div>
+            <div class="footer-portfolio">
+                <h3>PORTFÓLIO</h3>
+                <div class="miniatures">
+                    <figure>
+                        <a>
+                            <img src="./images/portfolio_imagem_2.jpg" alt="predios">
+                            <figcaption>LINK 1</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a>
+                            <img src="./images/portfolio_imagem_3.jpg" alt="predios">
+                            <figcaption>LINK 3</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a>
+                            <img src="./images/portfolio_imagem_5.jpg" alt="predios">
+                            <figcaption>LINK 3</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a>
+                            <img src="./images/portfolio_imagem_4.jpg" alt="predios">
+                            <figcaption>LINK 4</figcaption>
+                        </a>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <div>
+                <div class="footer-menu">
+                    <h3>MENU <span class="footer-span">&#8744</span></h3>
+                    <ul>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#depositions">Depoimentos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-about">
+                    <h3>SOBRE <span class="footer-span">&#8744</span></h3>
+                    <ul>
+                        <li><a href="#contact">Política de Privacidade</a></li>
+                        <li><a href="#contact">Termos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <figure class="vasta-logo2">
+                <img src="./images/footer_logo_360x.png" alt="logo">
+            </figure>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

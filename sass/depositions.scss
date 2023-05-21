@@ -1,0 +1,46 @@
+#depositions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 80px 60px 80px;
+}
+
+#depositions h2 {
+    margin-bottom: 20px;
+}
+
+.depositions-group {
+    display: flex;
+    align-items: center;
+}
+
+.comment {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin: auto 10px;
+}
+
+h6 {
+    margin-top: 12px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.comment p {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.comment img {
+    width: 95px;
+}
+
+.arrow img {
+    width: 20px;
+}
+
+// inverte a imagem da seta
+.left-arrow {
+    transform: scaleX(-1);
+}

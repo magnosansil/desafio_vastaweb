@@ -1,0 +1,379 @@
+@media (max-width: 1196px) {
+    .miniatures img {
+        width: 90px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 1048px) {
+    footer {
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+    }
+
+    .burger-menu {
+        display: grid;
+        justify-items: center;
+    }
+
+    footer>div {
+        width: 90%;
+    }
+
+    .footer-left {
+        align-items: center;
+    }
+
+    .footer-portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .miniatures {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .vasta-logo2 {
+        margin-top: 3%;
+    }
+
+    .footer-right>div {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 1108px) {
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .description figure {
+        margin: 0;
+        padding: 0;
+    }
+
+    .description button {
+        align-self: center;
+    }
+
+    .second-about {
+        margin-left: 20px;
+    }
+
+    form {
+        margin: 50px 100px;
+    }
+}
+
+@media(max-width: 768px) {
+    header {
+        background-image: url(/images/banner_image_mobile.png);
+        min-height: 90vh;
+    }
+
+    nav {
+        margin-left: 15px;
+        margin-right: 35px;
+    }
+
+    // Menu Hambúrguer é ativado
+    .burger-menu {
+        position: relative;
+    }
+
+    #burger {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    #menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: -20px;
+        width: 200px;
+        background-color: white;
+        padding: 10px;
+        list-style-type: none;
+    }
+
+    #menu.open {
+        display: block;
+    }
+
+    .list {
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .list:link {
+        color: #5f748a;
+    }
+
+    nav>div {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    nav>ul {
+        display: none;
+    }
+
+    .banner {
+        margin: 10%;
+        align-items: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .banner button {
+        margin-top: 50px;
+    }
+
+    #about {
+        margin-top: 15px;
+    }
+
+    .first-about {
+        padding-top: 15px;
+    }
+
+    .about-img {
+        max-width: 100vw;
+    }
+
+    .description button {
+        display: none;
+    }
+
+    .read-more {
+        display: initial;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .read-more span {
+        display: inline-block;
+        animation: moveUpDown 1.5s infinite;
+    }
+
+    // Animação da seta para baixo do botão "Leia Mais"
+    @keyframes moveUpDown {
+        0% {
+            transform: translateY(-2px);
+        }
+
+        50% {
+            transform: translateY(2px);
+        }
+
+        100% {
+            transform: translateY(-2px);
+        }
+    }
+
+    .second-about {
+        display: none;
+    }
+
+    .show {
+        display: flex;
+    }
+
+    .hidden {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    #portfolio {
+        margin: 0 10px;
+    }
+
+    .portfolio-images {
+        gap: 10px;
+    }
+
+    .portfolio-images figure {
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    .portfolio-images figure img {
+        width: 250px;
+    }
+
+    // Animação do aparecimento das imagens ocultas do portfólio
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .comment {
+        width: 45%;
+    }
+
+    .comment:nth-child(n+4) {
+        display: none;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    form input,
+    textarea {
+        width: 90vw;
+    }
+
+    form p {
+        align-self: center;
+    }
+
+    .input-phone {
+        order: 4;
+    }
+
+    .input-text {
+        order: 5;
+    }
+
+    .message-security {
+        order: 6;
+    }
+
+    .input-send {
+        order: 7;
+    }
+
+    footer>div {
+        width: 98%;
+    }
+
+    .footer-menu ul,
+    .footer-about ul,
+    .vasta-logo2 {
+        display: none;
+    }
+
+    .footer-span,
+    .vasta-logo1 {
+        display: initial;
+    }
+
+    .vasta-logo1 {
+        margin-bottom: 15px;
+    }
+
+    .subscription h3 {
+        text-align: center;
+    }
+
+    .footer-right div {
+        display: block;
+        align-items: center;
+        margin: 0;
+    }
+
+    .footer-menu {
+        border-bottom: 2px solid white;
+    }
+
+    footer li {
+        text-align: center;
+    }
+
+    .footer-menu h3,
+    .footer-about h3 {
+        padding: 10px;
+    }
+
+    .footer-right {
+        padding: 0;
+    }
+
+    footer>div {
+        width: 97vw;
+    }
+}
+
+@media (max-width: 660px) {
+    .comment {
+        width: 100%;
+    }
+
+    .comment:nth-child(n+3) {
+        display: none;
+    }
+
+    .portfolio-images figure img {
+        width: 140px;
+    }
+
+    #depositions {
+        margin: 20px;
+    }
+
+    .comment {
+        display: flex;
+        align-items: center;
+    }
+
+    .comment figure img {
+        width: 80px;
+    }
+
+    .comment-description p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    #email {
+        width: 60%;
+        height: 38px;
+    }
+
+    .subscription input[type="submit"] {
+        width: 40%;
+        padding: 10px 0;
+        letter-spacing: 0;
+    }
+}
+
+@media (max-width: 410px) {
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .banner h2 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,129 @@
+footer {
+    background-color: #303030;
+    padding: 20px 60px;
+    display: flex;
+    height: 365px;
+    color: white;
+}
+
+footer>div {
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px 20px;
+}
+
+.footer-left {
+    justify-content: space-between;
+}
+
+h3 {
+    letter-spacing: 2px;
+}
+
+.subscription div {
+    margin-top: 25px;
+}
+
+#email {
+    width: 65%;
+    height: 40px;
+    margin-right: -4px;
+    padding: 8px;
+}
+
+.subscription input[type="submit"] {
+    width: 33%;
+    padding: 10px;
+    background-color: #00b600;
+    border: solid #00b600 1px;
+    font-size: 13px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.footer-portfolio h3 {
+    margin-bottom: 20px;
+}
+
+.miniatures {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 20px;
+}
+
+.miniatures img {
+    width: 110px;
+    height: 90px;
+}
+
+.miniatures figure {
+    background-color: #383838;
+}
+
+.miniatures figure a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    color: white;
+    font-size: 14px;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.miniatures figure a:hover {
+    border-color: grey;
+}
+
+.footer-menu ul,
+.footer-about ul {
+    display: block;
+}
+
+.footer-right>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 45px;
+    margin-left: 30px;
+}
+
+.footer-right div div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer li {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+footer li a {
+    color: white;
+    transition: 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+footer li a:hover {
+    border-color: white;
+}
+
+.vasta-logo1 {
+    display: none;
+}
+
+.vasta-logo2 {
+    align-self: center;
+    margin-top: 10%;
+}

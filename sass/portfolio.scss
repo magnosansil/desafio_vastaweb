@@ -1,0 +1,26 @@
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 80px;
+}
+
+.portfolio-images {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 10px;
+    justify-content: space-around;
+}
+
+#portfolio button {
+    width: 200px;
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #497395;
+    border-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 13px;
+}
